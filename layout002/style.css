@@ -9,33 +9,46 @@ body {
     flex: 1 1 100vw;
     flex-wrap: wrap;
 }
-header {
+header, nav, main, aside, footer {
     display: flex;
     margin: 3px;
-    flex: 1 1 100vw;
     background: #a1a1a1;
+}
+header {
+    flex: 1 1 100vw;
+    height: 100px;
 }
 nav {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    background: #a1a1a1;
+
+    flex: 1 1 200px;
 }
 main {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    background: #a1a1a1;
+    height: calc(100vh - 224px);
+    flex: 20 1 500px;
 }
 aside {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    background: #a1a1a1;
+
+    flex: 1 1 200px;
 }
 footer {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    background: #a1a1a1;    
+    height: 100px;
+    flex: 1 1 100vw;    
+}
+
+@media screen and (max-width:923px) {
+    main {
+        height: calc(100vh - 330px);
+    }
+    aside {
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+@media screen and (max-width:717px) {
+    nav {
+        height: 100px;
+    }
+    main {
+        height: calc(100vh - 446px);
+    }
 }
