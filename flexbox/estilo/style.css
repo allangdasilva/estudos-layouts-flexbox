@@ -1,0 +1,39 @@
+.container {
+    background: #ccc;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+
+    justify-content: flex-start;
+
+    align-items: stretch;
+
+    align-content: flex-start;
+}
+.item {
+    background: #333;
+    color: #fff;
+    margin: 5px;
+    padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    height: 30px;
+}
+.article-01 {
+    
+}
+.article-02 {
+
+}
+.article-03 {
+
+}
+.article-04 {
+    flex-shrink: 3;
+}
+
